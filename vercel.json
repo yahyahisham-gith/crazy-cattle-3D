@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac06424ce826f1158cbf92dcf584334c25a9d7195800d865ee51d0f328e496e1
-size 204
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "status": 301,
+      "headers": { "Location": "/website/2/3/" }
+    },
+    {
+      "src": "/(?!website/2/3/)(.*)",
+      "status": 301,
+      "headers": { "Location": "/website/2/3/$1" }
+    },
+    {
+      "src": "/website/2/3/(.*)",
+      "dest": "/website/2/3/$1"
+    }
+  ]
+}

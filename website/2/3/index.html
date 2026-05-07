@@ -1,3 +1,262 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc5437f664eebb9ae72861863eba6fdb20479075b65501ba1442e3afa08f08db
-size 12444
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Crazy Cattle 3D Things | And More</title>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69c2860fd96a9710bca215b0&product=sop' async='async'></script>
+    <!-- ShareThis BEGIN --> <div class="sharethis-inline-share-buttons"></div> <!-- ShareThis END -->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=69c2860fd96a9710bca215b0&product=inline-share-buttons' async='async'></script>
+    <style>
+        :root { 
+            --bg: #050505; 
+            --card-bg: #111; 
+            --border: #333; 
+            --accent: #0096ff; 
+            --success: #00ff00;
+        }
+        
+        body { padding: 15px; box-sizing: border-box; max-width: 1400px; margin: 0 auto; font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: white; -webkit-tap-highlight-color: transparent; }
+        
+        header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 25px; flex-wrap: wrap; gap: 10px; }
+        h1 { font-size: 1.8rem; margin: 0; letter-spacing: 1px; }
+
+        .metrics { display: flex; gap: 20px; font-family: 'Consolas', monospace; font-size: 0.8rem; color: #888; }
+        .metric span { color: var(--accent); }
+
+        .status-bar { background: rgba(0, 150, 255, 0.05); border: 1px solid rgba(0, 150, 255, 0.2); border-left: 4px solid var(--accent); padding: 12px; margin: 15px 0; font-size: 0.85rem; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+
+        .row { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; margin-bottom: 30px; }
+
+        .card { background: var(--card-bg); border: 1px solid var(--border); padding: 20px; text-decoration: none; color: white; display: flex; flex-direction: column; border-radius: 12px; transition: all 0.3s; position: relative; overflow: hidden; cursor: pointer; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); background: #161616; }
+        .card:active { transform: scale(0.98); }
+
+        .badge { font-size: 0.7rem; font-weight: bold; padding: 3px 8px; border-radius: 4px; background: #333; margin-bottom: 10px; align-self: flex-start; text-transform: uppercase; }
+        .card-title { font-weight: bold; font-size: 1.1rem; margin-top: 5px; }
+        .card-desc { font-size: 0.85rem; color: #888; margin-top: 8px; line-height: 1.4; }
+        
+        .section-label { display: flex; align-items: center; gap: 10px; color: #666; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1.5px; }
+        .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+        .progress-container { display: none; width: 100%; background: #222; border-radius: 4px; margin-top: 15px; height: 8px; overflow: hidden; }
+        .progress-bar { width: 0%; height: 100%; background: var(--accent); transition: width 0.1s; }
+
+        .b-blue { background: #0044cc; } .b-red { background: #8b0000; } .b-green { background: #006400; } 
+        .b-purple { background: #4b0082; } .b-gold { background: #b8860b; } .b-teal { background: #00695c; }
+        
+        footer { text-align: center; color: #444; font-size: 0.75rem; padding: 60px 0; border-top: 1px solid var(--border); }
+    </style>
+    <link rel="stylesheet" href="detector.css">
+<script src="ads.js"></script>
+<script src="detector.js"></script>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Crazy Cattle 3D Things | And More</h1>
+            <div class="metrics">
+                <div class="metric">UPTIME: <span id="uptime">00:00:00</span></div>
+                <div class="metric">PING: <span id="ping">12ms</span></div>
+            </div>
+        </div>
+        <div id="system-clock" style="font-family: monospace; color: var(--accent);">00:00:00</div>
+    </header>
+
+    <div class="status-bar">
+        <span><strong>SYSTEM STATUS:</strong> <span style="color:var(--success)">● OPERATIONAL</span></span>
+        <span style="opacity:0.5; font-size: 0.7rem;">HYBRID PORT 8700 ACTIVE</span>
+    </div>
+
+    <span class="section-label">Mirror Network</span>
+    <div class="row">
+<a href="https://crazy-cattle-3d-mirror-2-yoplay.netlify.app" class="card"> <!-- replace /yoplay-mirror-2 with what you want! -->
+    <span class="badge b-purple">MIRROR_04</span>
+    <span class="card-title">YoPlay Mirror 2 (GitHub)</span>
+    <span class="card-desc">Bypassing local blocks via cloud-hosted GitHub Pages.</span>
+
+</a><a href="/crazy-cattle-list" class="card">
+    <span class="badge b-purple">LIST</span>
+    <span class="card-title">Crazy Cattle 3D List</span>
+    <span class="card-desc">List That Has Content Exclusive to Crazy Cattle 3D.</span>
+</a>
+        <a href="/public/yoplay-mirror/index.html" class="card">
+            <span class="badge b-purple">MIRROR_01</span>
+            <span class="card-title">Crazy Cattle 3D YoPlay Mirror</span>
+            <span class="card-desc">High-speed external backup instance for heavy assets.</span>
+        </a>
+        <a href="/public/io-mirror/index.html" class="card">
+            <span class="badge b-purple">MIRROR_02</span>
+            <span class="card-title">Cattle IO Mirror</span>
+            <span class="card-desc">a game named crazy cattle 3d LOL.</span>
+        </a>
+        <a href="/public/https___yujiandemo.com/yujiandemo.com/index.html" class="card">
+            <span class="badge b-gold">MIRROR_03</span>
+            <span class="card-title">Yujiandemo Mirror</span>
+            <span class="card-desc">Legacy asset mirror for backward compatibility.</span>
+        </a>
+    </div>
+
+    <span class="section-label">Core Game Nodes</span>
+    <div class="row">
+        <a href="/game-files/index.html" class="card">
+            <span class="badge b-green">V1.0_CORE</span>
+            <span class="card-title">Cattle 3D 1.0</span>
+            <span class="card-desc">Original build from core files.</span>
+        </a>
+        <a href="/public/crazycattle3d.github.io/index.html" class="card">
+            <span class="badge b-blue">REPO_01</span>
+            <span class="card-title">Crazy Cattle 3D Repo 1</span>
+            <span class="card-desc">GitHub pages mirror.</span>
+        </a>
+        <a href="/public/cattle3d-main/index.html" class="card">
+            <span class="badge b-blue">REPO_02</span>
+            <span class="card-title">Crazy Cattle 3D Repo 2</span>
+            <span class="card-desc">Main developer repository branch.</span>
+        </a>
+        <a href="/public/0eo69a/index.html" class="card">
+            <span class="badge b-purple">LEGACY</span>
+            <span class="card-title">Cattle Unoriginal</span>
+            <span class="card-desc">Public subfolder source.</span>
+        </a>
+<a href="/bloxorz" class="card" style="height: 160px; box-sizing: border-box;">
+            <span class="badge b-purple">Bloxorz</span>
+            <span class="card-title">Bloxorz</span>
+            <span class="card-desc">Bloxorz A Fun Game That You Roll A Block In A HOLE.</span>
+        </a>
+
+        <a href="https://blox-orz.vercel.app/" class="card" style="height: 160px; box-sizing: border-box;">
+            <span class="badge b-purple">Bloxorz</span>
+            <span class="card-title">Another Bloxorz Source</span>
+            <span class="card-desc">An alternate mirror for playing Bloxorz.</span>
+        </a>
+
+    <span class="section-label">System Gateway</span>
+    <div class="row">
+        <div class="card" onclick="downloadZip()">
+            <span class="badge b-blue">ZIP</span>
+            <span class="card-title">Download Full Project</span>
+            <span class="card-desc">Includes all assets and source code (WinRAR).</span>
+            <div class="progress-container" id="zipProgContainer">
+                <div class="progress-bar" id="zipProgBar"></div>
+            </div>
+        </div>
+
+        <div class="card" onclick="downloadExe()">
+            <span class="badge b-red">EXE</span>
+            <span class="card-title">Download Desktop Crazy Cattle 3D EXE</span>
+            <span class="card-desc">Fetch the native Windows binary for offline use.</span>
+            <div class="progress-container" id="progContainer">
+                <div class="progress-bar" id="progBar"></div>
+            </div>
+        </div>
+
+        <a href="https://web.whatsapp.com" target="_blank" class="card">
+            <span class="badge b-teal">SOCIAL</span>
+            <span class="card-title">WhatsApp Web</span>
+            <span class="card-desc">QR-fixed link.</span>
+        </a>
+    </div>
+
+    <footer>STATION_ULTIMATE_v5 // 2026</footer>
+<script>
+    // --- ZIP DOWNLOAD FUNCTION ---
+    async function downloadZip() {
+        const bar = document.getElementById('zipProgBar');
+        const container = document.getElementById('zipProgContainer');
+        container.style.display = 'block';
+
+        try {
+            const response = await fetch('/get-latest-zip');
+            const reader = response.body.getReader();
+            const contentLength = +response.headers.get('Content-Length');
+            
+            let receivedLength = 0;
+            let chunks = []; 
+
+            while(true) {
+                const {done, value} = await reader.read();
+                if (done) break;
+                chunks.push(value);
+                receivedLength += value.length;
+                if (contentLength) {
+                    bar.style.width = (receivedLength / contentLength * 100) + '%';
+                }
+            }
+
+            const blob = new Blob(chunks);
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "crazy-cattle-3D.zip";
+            a.click();
+            
+            setTimeout(() => { 
+                container.style.display = 'none'; 
+                bar.style.width = '0'; 
+            }, 2000);
+        } catch (err) {
+            alert("Zip download failed.");
+            container.style.display = 'none';
+        }
+    }
+
+    // --- EXE DOWNLOAD FUNCTION ---
+    async function downloadExe() {
+        const bar = document.getElementById('progBar');
+        const container = document.getElementById('progContainer');
+        container.style.display = 'block';
+
+        try {
+            const response = await fetch('/download-exe');
+            const reader = response.body.getReader();
+            const contentLength = +response.headers.get('Content-Length');
+            
+            let receivedLength = 0;
+            let chunks = []; 
+
+            while(true) {
+                const {done, value} = await reader.read();
+                if (done) break;
+                chunks.push(value);
+                receivedLength += value.length;
+                if (contentLength) {
+                    bar.style.width = (receivedLength / contentLength * 100) + '%';
+                }
+            }
+
+            const blob = new Blob(chunks);
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "CrazyCattle3D.zip"; 
+            a.click();
+            
+            setTimeout(() => { 
+                container.style.display = 'none'; 
+                bar.style.width = '0'; 
+            }, 2000);
+        } catch (err) {
+            alert("EXE download failed.");
+            container.style.display = 'none';
+        }
+    }
+
+    // Fake Metrics Logic
+    let secs = 0;
+    setInterval(() => {
+        secs++;
+        const h = Math.floor(secs / 3600).toString().padStart(2, '0');
+        const m = Math.floor((secs % 3600) / 60).toString().padStart(2, '0');
+        const s = (secs % 60).toString().padStart(2, '0');
+        document.getElementById('uptime').innerText = `${h}:${m}:${s}`;
+        document.getElementById('system-clock').innerText = new Date().toLocaleTimeString();
+    }, 1000);
+</script>
+</body>
+</html>

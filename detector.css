@@ -1,0 +1,29 @@
+/* Prevent extensions from hiding the warning via display:none !important */
+#ab-warning {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
+}
+
+/* Make the 'Continue' button look different from the 'Reload' button */
+#ab-continue {
+    background: #555;
+    margin-left: 10px;
+}
+.ab-content {
+    background: #222;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #ff4444;
+}
+
+button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
